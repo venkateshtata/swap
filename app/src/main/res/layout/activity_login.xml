@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:id="@+id/img"
+        android:src="@drawable/logo_orig"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:padding="15dp"
+        android:layout_gravity="center"
+        android:background="#484848"
+        android:hint="email"
+        android:textColorHint="#BDBDBD"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#484848"
+        android:textColor="#484848"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:padding="15dp"
+        android:textColorHint="#BDBDBD"
+        android:hint="password"
+        />
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="@drawable/button_round"
+        android:text="login"
+        android:textColor="#fff" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/front_back"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="100dp"
+        android:id="@+id/img"
+        android:src="@drawable/logo_orig"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="login"
+        android:layout_below="@id/img"
+        android:id="@+id/btn_login"
+        android:background="@drawable/transparent_bg"
+        android:textColor="#fff"
+        android:layout_margin="15dp"/>
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="sign up"
+        android:id="@+id/btn_signup"
+        android:layout_below="@+id/btn_login"
+        android:background="@drawable/transparent_bg"
+        android:textColor="#fff"
+        android:layout_margin="15dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="License Agreement"
+        android:gravity="center"
+        android:textColor="#fff"/>
+
+
+</LinearLayout>
