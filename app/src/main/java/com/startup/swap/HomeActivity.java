@@ -36,12 +36,18 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
+        if(savedInstanceState==null) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                    new MessageFragment()).commit();
+            navigationView.setCheckedItem(R.id.nav_message);
+        }
+
     }
 
     @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
-        switch(menuItem.getItemId()){
+        switch(item.getItemId()){
             case R.id.nav_message:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new MessageFragment()).commit();
@@ -64,6 +70,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 break;
         }
 
+        drawer.closeDrawer(GravityCompat.START);
         return true;
     }
 
